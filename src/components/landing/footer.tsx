@@ -8,10 +8,10 @@ export function Footer() {
       <div className="container py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <Baby className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg font-headline">ConnectKids</span>
+          <span className="font-bold text-lg font-headline">GenuineConnection</span>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} ConnectKids. All Rights Reserved.
+          &copy; {currentYear} GenuineConnection. All Rights Reserved.
         </p>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <Link href="#" className="hover:text-primary">

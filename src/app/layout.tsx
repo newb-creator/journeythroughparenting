@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ConnectKids',
+  title: 'GenuineConnection',
   description: 'Parenting classes for the modern family.',
 };
 

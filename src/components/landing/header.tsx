@@ -8,7 +8,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 mr-auto">
           <Baby className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg font-headline">ConnectKids</span>
+          <span className="font-bold text-lg font-headline">GenuineConnection</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link

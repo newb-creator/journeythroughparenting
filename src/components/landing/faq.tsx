@@ -43,7 +43,7 @@ export function Faq() {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Find answers to common questions about the ConnectKids course.
+            Find answers to common questions about the GenuineConnection course.
           </p>
         </div>
         <Accordion type="single" collapsible className="w-full">

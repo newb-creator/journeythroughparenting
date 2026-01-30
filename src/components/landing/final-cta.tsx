@@ -16,7 +16,7 @@ export function FinalCta() {
           size="lg"
           className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-7 px-10"
         >
-          Enroll in ConnectKids Today <ArrowRight className="ml-2 h-5 w-5" />
+          Enroll in GenuineConnection Today <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </div>
     </section>

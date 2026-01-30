@@ -25,7 +25,7 @@ const testimonialsData = [
   {
     name: 'Emily R.',
     role: 'New Parent',
-    text: 'As a new mom, I was feeling so lost. ConnectKids gave me the confidence and community I desperately needed. Highly recommend!',
+    text: 'As a new mom, I was feeling so lost. GenuineConnection gave me the confidence and community I desperately needed. Highly recommend!',
     imageId: 'testimonial-3',
   },
 ];
