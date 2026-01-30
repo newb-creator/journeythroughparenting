@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "lynette-anderson",
+      "description": "A portrait of Lynette Anderson, an experienced early childhood educator.",
+      "imageUrl": "https://images.unsplash.com/photo-1602133187081-4874fdbd555c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTY5MzE2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "educator portrait"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Avatar for a testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Avatar for a testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1594616838951-c155f8d978a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Avatar for a testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1750535135645-005e250ff210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY5NzgxOTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "video-placeholder",
+      "description": "A placeholder for a video about temper tantrums.",
+      "imageUrl": "https://images.unsplash.com/photo-1647616927583-1d44a79a38a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZCUyMGZhbWlseXxlbnwwfHx8fDE3Njk3OTc0NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child family"
+    }
+  ]
 }
