@@ -128,9 +128,9 @@ const InstructorSection = () => {
         <section id="about" className="py-16 md:py-24">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative w-full max-w-sm mx-auto aspect-square">
+                    <div className="relative w-full max-w-sm mx-auto aspect-[4/5]">
                         {instructorImage && (
-                            <Image src={instructorImage.imageUrl} alt={instructorImage.description} data-ai-hint={instructorImage.imageHint} fill className="rounded-full object-cover shadow-lg" />
+                            <Image src={instructorImage.imageUrl} alt={instructorImage.description} data-ai-hint={instructorImage.imageHint} fill className="rounded-2xl object-cover shadow-lg" />
                         )}
                     </div>
                     <div>
