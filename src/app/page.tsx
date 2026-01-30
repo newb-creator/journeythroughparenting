@@ -63,8 +63,13 @@ const WordCycle = () => {
 const Header = () => (
   <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-40">
     <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-      <a href="#" className="text-2xl font-headline font-bold text-primary">
-        Genuine Connection
+      <a href="#" className="flex items-center gap-3">
+        <div className="w-10 h-10 bg-[#d5e5e1] rounded-full flex items-center justify-center">
+          <HeartHandshake className="w-6 h-6 text-accent" />
+        </div>
+        <span className="text-2xl font-headline font-bold">
+          <span className="text-foreground">Genuine</span><span className="text-accent">Connection</span>
+        </span>
       </a>
       <nav className="hidden md:flex items-center space-x-6">
         <a href="#curriculum" className="hover:text-primary transition-colors">Curriculum</a>
