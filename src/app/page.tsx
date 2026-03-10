@@ -75,7 +75,7 @@ const Header = () => (
         <a href="#reviews" className="hover:text-primary transition-colors">Reviews</a>
       </nav>
       <Button asChild>
-        <a href="#waitlist">Test Waitlist</a>
+        <a href="#waitlist">Join Waitlist</a>
       </Button>
     </div>
   </header>
@@ -92,7 +92,7 @@ const Hero = () => (
             </p>
             <div className="mt-8">
                 <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                    <a href="#waitlist">Test Waitlist Now</a>
+                    <a href="#waitlist">Join Waitlist Now</a>
                 </Button>
             </div>
         </div>
@@ -360,7 +360,7 @@ const PricingSection = () => (
                         </ul>
                     </CardContent>
                     <div className="p-6 pt-0">
-                         <Button className="w-full" variant="outline">Test Waitlist</Button>
+                         <Button className="w-full" variant="outline">Join Waitlist</Button>
                     </div>
                 </Card>
                  <Card className="flex flex-col border-primary ring-2 ring-primary">
@@ -377,7 +377,7 @@ const PricingSection = () => (
                         </ul>
                     </CardContent>
                      <div className="p-6 pt-0">
-                         <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Test the Village Waitlist</Button>
+                         <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Join the Village Waitlist</Button>
                     </div>
                 </Card>
             </div>
