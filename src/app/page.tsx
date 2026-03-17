@@ -66,7 +66,7 @@ const Header = () => (
       <a href="#" className="flex items-center gap-2">
         <HeartHandshake className="w-8 h-8 text-accent" />
         <span className="text-2xl font-headline font-bold">
-          <span className="text-foreground">Inner</span><span className="text-accent">Bloom</span>
+          <span className="text-foreground">Journey</span><span className="text-accent">through Parenting</span>
         </span>
       </a>
       <nav className="hidden md:flex items-center space-x-6">
