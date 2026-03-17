@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Journey to Parenting',
+  title: 'Journey through Parenting',
   description: 'Parenting classes for the modern family.',
 };
 
