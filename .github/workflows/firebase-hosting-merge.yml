@@ -16,8 +16,8 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JOURNEY_THROUGH_PARENTING }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_STUDIO_4075466771_86A8C }}
           channelId: live
-          projectId: journey-through-parenting
+          projectId: studio-4075466771-86a8c
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
