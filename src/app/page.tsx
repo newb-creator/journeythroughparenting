@@ -212,24 +212,24 @@ const CourseHighlightsSection = () => (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                     <div className="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-primary/10 rounded-full">
+                        <UsersRound className="w-8 h-8 text-primary"/>
+                    </div>
+                    <h3 className="text-xl font-headline font-bold">Live Instruction</h3>
+                    <p className="mt-2 text-muted-foreground">4 weekly classes. Real time with Lynette and a small group of parents.</p>
+                </div>
+                <div className="text-center">
+                    <div className="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-primary/10 rounded-full">
                         <Star className="w-8 h-8 text-primary"/>
                     </div>
-                    <h3 className="text-xl font-headline font-bold">Unique focus</h3>
-                    <p className="mt-2 text-muted-foreground">Build your long term relationship with your child, while cultivating their curiosity, self-direction, self-confidence, emotional regulation, and creativity.</p>
+                    <h3 className="text-xl font-headline font-bold">A Different Focus</h3>
+                    <p className="mt-2 text-muted-foreground">Build a lasting bond with your child — while growing their curiosity, confidence, self-regulation, and creativity.</p>
                 </div>
                 <div className="text-center">
                     <div className="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-primary/10 rounded-full">
                         <HeartHandshake className="w-8 h-8 text-primary"/>
                     </div>
-                    <h3 className="text-xl font-headline font-bold">Active learning</h3>
-                    <p className="mt-2 text-muted-foreground">Forget dry lectures. We use playful, spot-on demos that feel exactly like life with your child.</p>
-                </div>
-                <div className="text-center">
-                    <div className="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-primary/10 rounded-full">
-                        <UsersRound className="w-8 h-8 text-primary"/>
-                    </div>
-                    <h3 className="text-xl font-headline font-bold">Live instructor</h3>
-                    <p className="mt-2 text-muted-foreground">You can talk to the expert, connect with other parents, and practice live.</p>
+                    <h3 className="text-xl font-headline font-bold">Learning by Doing</h3>
+                    <p className="mt-2 text-muted-foreground">No lectures. Just playful, spot-on demos that feel like real life with your child.</p>
                 </div>
             </div>
         </div>
@@ -247,25 +247,29 @@ const CurriculumSection = () => (
                     <AccordionItem value="item-1">
                         <AccordionTrigger className="text-lg font-headline">Week 1: The Foundation of Connection</AccordionTrigger>
                         <AccordionContent>
-                            Learn the core principles of connection-based parenting. We'll explore how your own mindset impacts your child's behavior and introduce the foundational tools for empathetic communication.
+                            <p>Learn the core principles of connection-based parenting. We'll explore how your own mindset impacts your child's behavior, and introduce the foundational tools for empathetic communication.</p>
+                            <p className="mt-4"><em>You'll learn:</em> Parenting with the end in mind, how change really happens, the three parenting paradigms (authoritative, permissive, and heart-centered), Genuine Endearing Moments, and a 60-second grounding technique.</p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
                         <AccordionTrigger className="text-lg font-headline">Week 2: Decoding Behavior</AccordionTrigger>
                         <AccordionContent>
-                            Dive deep into the 'why' behind your child's actions. This week is all about shifting your perspective from seeing 'bad behavior' to seeing 'unmet needs' and learning how to respond effectively.
+                            <p>Dive deep into the 'why' behind your child's actions. This week is all about shifting your perspective from seeing 'bad behavior' to seeing 'unmet needs' and learning how to respond effectively.</p>
+                            <p className="mt-4"><em>You'll learn:</em> The look and feel of high/medium/low levels of connection, the SPECIAL needs of every child, temper tantrums, active listening, and self-care.</p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
                         <AccordionTrigger className="text-lg font-headline">Week 3: Setting Limits with Love</AccordionTrigger>
                         <AccordionContent>
-                            Boundaries are essential for a healthy family. Learn how to set firm, respectful limits without resorting to punishment or rewards, fostering cooperation instead of conflict.
+                            <p>Boundaries are essential for a healthy family. Learn how to set clear, respectful limits without resorting to punishment or rewards, fostering cooperation instead of conflict.</p>
+                            <p className="mt-4"><em>You'll learn:</em> How to set limits around health, safety, and respect, how to express when your own boundaries are being crossed, meeting your child at their developmental age, using feeling encouragers, and using encouragement instead of praise or rewards.</p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
                         <AccordionTrigger className="text-lg font-headline">Week 4: Playful Parenting & Lasting Joy</AccordionTrigger>
                         <AccordionContent>
-                            Rediscover the power of play in building resilience and connection. This week provides practical strategies for bringing more laughter, joy, and ease into your daily family life.
+                            <p>Rediscover the power of play in building resilience and connection. This week provides practical strategies for bringing more laughter, joy, and ease into your daily family life.</p>
+                            <p className="mt-4"><em>You'll learn:</em> How to run family meetings, reframing negative labels, prioritizing one-on-one time, and giving yourself permission to play — plus a little grace for the days that don't go perfectly.</p>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
@@ -396,7 +400,7 @@ export default function Home() {
         <ProblemSection />
         <InstructorSection />
         <CourseHighlightsSection />
-        <SampleLessonSection/>
+        {/* <SampleLessonSection/> */}
         <CurriculumSection />
         <TestimonialsSection />
         <FaqSection />
