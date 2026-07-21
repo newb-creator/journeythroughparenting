@@ -245,7 +245,7 @@ const CurriculumSection = () => (
     <section id="curriculum" className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-center">Course Curriculum</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-center text-muted-foreground">A 4-week to transform your family's dynamic.</p>
+            <p className="mt-4 max-w-2xl mx-auto text-center text-muted-foreground">A 4-week course to transform your family's dynamic.</p>
             <div className="max-w-3xl mx-auto mt-12">
                 <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
@@ -331,11 +331,11 @@ const FaqSection = () => (
                 <Accordion type="single" collapsible>
                     <AccordionItem value="faq-1">
                         <AccordionTrigger>What if I'm too busy?</AccordionTrigger>
-                        <AccordionContent>The course is designed for busy parents! Lessons are short, practical, and you can learn at your own pace.</AccordionContent>
+                        <AccordionContent>We know parents are busy — that's why we kept it to just 4 sessions, with practical takeaways you can use immediately.</AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="faq-2">
                         <AccordionTrigger>Is this for a specific age group?</AccordionTrigger>
-                        <AccordionContent>The principles apply to all ages, but the examples and strategies are most relevant for parents of toddlers through elementary school-aged children (approx. 2-10).</AccordionContent>
+                        <AccordionContent>The principles apply to all ages, but the examples and strategies are most relevant for parents of preschoolers through elementary school-aged children (approx 3-8).</AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="faq-3">
                         <AccordionTrigger>What if my partner won't do it with me?</AccordionTrigger>
