@@ -16,6 +16,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MessageSquareWarning, MicOff, UsersRound, PlayCircle, Grab, BrainCircuit, Clock, HeartHandshake, Star, CheckCircle, Video, Users, LifeBuoy, BookOpen, Twitter, Youtube, Facebook, Instagram } from 'lucide-react';
 
@@ -89,9 +90,9 @@ const Header = () => (
         <a href="#about" className="hover:text-primary transition-colors">About</a>
         <a href="#reviews" className="hover:text-primary transition-colors">Reviews</a>
       </nav>
-      <Button asChild>
+      {/* <Button asChild>
         <a href="#waitlist">Join Waitlist</a>
-      </Button>
+      </Button> */}
     </div>
   </header>
 );
@@ -106,8 +107,11 @@ const Hero = () => (
                 The 4-week course to stop managing behaviors and start connecting with your child.
             </p>
             <div className="mt-8">
-                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                {/* <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
                     <a href="#waitlist">Join Waitlist Now</a>
+                </Button> */}
+                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <a href="#about">See What's Included</a>
                 </Button>
             </div>
         </div>
@@ -293,13 +297,15 @@ const TestimonialsSection = () => {
                     <Carousel opts={{ loop: true }} className="max-w-4xl mx-auto">
                         <CarouselContent>
                             {testimonials.map(t => {
-                                const avatar = PlaceHolderImages.find(p => p.id === t.id);
+                                const initials = t.name.replace(/\./g, '').split(' ').map(part => part[0]).join('');
                                 return (
                                 <CarouselItem key={t.id} className="md:basis-1/2 lg:basis-1/3">
                                     <div className="p-1">
                                     <Card className="h-full">
                                         <CardContent className="pt-6 flex flex-col items-center text-center">
-                                            {avatar && <Image src={avatar.imageUrl} alt={avatar.description} data-ai-hint={avatar.imageHint} width={80} height={80} className="rounded-full mb-4" />}
+                                            <Avatar className="h-20 w-20 mb-4">
+                                                <AvatarFallback className="text-xl font-headline font-bold bg-primary/10 text-primary">{initials}</AvatarFallback>
+                                            </Avatar>
                                             <p className="italic text-muted-foreground">"{t.quote}"</p>
                                             <p className="mt-4 font-bold font-headline">{t.name}</p>
                                         </CardContent>
@@ -333,7 +339,7 @@ const FaqSection = () => (
                     </AccordionItem>
                     <AccordionItem value="faq-3">
                         <AccordionTrigger>What if my partner won't do it with me?</AccordionTrigger>
-                        <AccordionContent>That's okay! Even one parent implementing these changes can have a huge positive impact on the entire family dynamic. Our Village Pass is a great option to invite them to join later!</AccordionContent>
+                        <AccordionContent>That's okay! Even one parent implementing these changes can have a huge positive impact on the entire family dynamic.</AccordionContent>
                     </AccordionItem>
                 </Accordion>
             </div>
@@ -345,28 +351,22 @@ const PricingSection = () => (
     <section id="waitlist" className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
              <div className="text-center mb-12">
-                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Join Our First Class</h2>
-                 <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Invest in your family's future. Join the waitlist to be notified when enrollment opens.</p>
+                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Join Our Pilot Class</h2>
+                 <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Invest in your family's future. Join our pilot class — a small, invite-only group to start.</p>
             </div>
-            <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid max-w-md mx-auto">
                 <Card className="flex flex-col">
-                    <CardHeader>
-                        <CardTitle className="font-headline">Learn Alone</CardTitle>
-                        <CardDescription>A focused, self-paced journey for one.</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                        <p className="text-4xl font-bold font-headline mb-4">$100 <span className="text-sm font-normal text-muted-foreground">/ person</span></p>
+                    <CardContent className="flex-grow pt-6">
+                        <p className="text-4xl font-bold font-headline mb-4">$200 <span className="text-sm font-normal text-muted-foreground">/ person</span></p>
                         <ul className="space-y-2">
-                            <li className="flex items-center gap-2"><CheckCircle className="w-5 h-5 text-primary"/>Single-person access</li>
-                            <li className="flex items-center gap-2"><CheckCircle className="w-5 h-5 text-primary"/>Full self-paced course</li>
+                            <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>Four 2-hour live sessions with Lynette</li>
+                            <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>A workbook to capture what clicks — yours to keep and revisit</li>
+                            <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>A small group of fellow parents on the same journey</li>
+                            <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>Personalized guidance on your own parenting moments, live with Lynette</li>
                         </ul>
                     </CardContent>
-                    <div className="p-6 pt-0">
-                         <Button className="w-full" variant="outline" asChild>
-                            <a href="#waitlist">Join Waitlist</a>
-                         </Button>
-                    </div>
                 </Card>
+                {/* Village Pass option — may bring back later
                  <Card className="flex flex-col border-primary ring-2 ring-primary">
                     <CardHeader>
                         <CardTitle className="font-headline">Village Pass</CardTitle>
@@ -386,6 +386,7 @@ const PricingSection = () => (
                          </Button>
                     </div>
                 </Card>
+                */}
             </div>
         </div>
     </section>
