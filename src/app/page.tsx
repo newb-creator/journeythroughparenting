@@ -54,7 +54,7 @@ const WordCycle = () => {
   }, [currentWord, isDeleting, wordIndex, words, delay]);
 
   return (
-    <span className="font-bold text-accent min-h-[4rem] inline-block">
+    <span className="font-bold text-accent min-h-[4rem] inline-block align-bottom">
       {currentWord}
     </span>
   );
@@ -159,7 +159,7 @@ const InstructorSection = () => {
                         <h2 className="text-3xl md:text-4xl font-headline font-bold">Meet Your Instructor: Lynette Anderson</h2>
                         <p className="mt-4 text-lg text-primary font-semibold">Experienced Early Childhood Educator</p>
                         <p className="mt-4 text-muted-foreground">
-                            Unlike most practitioners who work with adults, Lynette has spent 30 years in the classroom.  She has personally guided over 2,000 young children and their parents (and she's still teaching preschool today). Lynette offers world-class insight on how children <em>actually</em> work--not how they work in theory.
+                            Unlike most practitioners who work with adults, Lynette has spent 30 years in the classroom. She is the Director of Hilltop Preschool, a parent-participation, Reggio-inspired co-op in southern California -- meaning parents work alongside teachers in the classroom every day, and Lynette has coached them through it. She's personally taught over 2,000 young children and their parents (and she's still teaching preschool today). Lynette offers hard-earned insight on how children <em>actually</em> work--not how they work in theory.
                         </p>
                     </div>
                 </div>
@@ -357,7 +357,7 @@ const PricingSection = () => (
             <div className="grid max-w-md mx-auto">
                 <Card className="flex flex-col">
                     <CardContent className="flex-grow pt-6">
-                        <p className="text-4xl font-bold font-headline mb-4">$200 <span className="text-sm font-normal text-muted-foreground">/ person</span></p>
+                        <p className="text-4xl font-bold font-headline mb-4">$250 <span className="text-sm font-normal text-muted-foreground">/ person</span></p>
                         <ul className="space-y-2">
                             <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>Four 2-hour live sessions with Lynette</li>
                             <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>A workbook to capture what clicks — yours to keep and revisit</li>
