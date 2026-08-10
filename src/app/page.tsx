@@ -54,8 +54,8 @@ const WordCycle = () => {
   }, [currentWord, isDeleting, wordIndex, words, delay]);
 
   return (
-    <span className="font-bold text-accent min-h-[4rem] inline-block align-bottom">
-      {currentWord}
+    <span className="font-bold text-accent min-h-[4rem] inline-block">
+      {currentWord || ' '}
     </span>
   );
 };
