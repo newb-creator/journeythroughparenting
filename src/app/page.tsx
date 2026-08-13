@@ -252,7 +252,7 @@ const CurriculumSection = () => (
                         <AccordionTrigger className="text-lg font-headline">Week 1: The Foundation of Connection</AccordionTrigger>
                         <AccordionContent>
                             <p>Learn the core principles of connection-based parenting. We'll explore how your own mindset impacts your child's behavior, and introduce the foundational tools for empathetic communication.</p>
-                            <p className="mt-4"><em>You'll learn:</em> Parenting with the end in mind, how change really happens, the three parenting paradigms (authoritative, permissive, and heart-centered), Genuine Endearing Moments, and a 60-second grounding technique.</p>
+                            <p className="mt-4"><em>You'll learn:</em> Parenting with the end in mind, how change really happens, the three parenting paradigms (autocratic, permissive, and heart-centered), Genuine Endearing Moments, and a 60-second grounding technique.</p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
@@ -284,9 +284,9 @@ const CurriculumSection = () => (
 
 const TestimonialsSection = () => {
     const testimonials = [
+        { id: 'testimonial-3', name: 'Emily R.', quote: "I love how deep the class went.  I learned not just tactics, but a coherent philosophy.  Now I can use it for any problems that come up." },
         { id: 'testimonial-1', name: 'Sarah J.', quote: "This class helped me to confidently understand what goes on in the preschool brain, to know what young children are capable of and need at an early age." },
         { id: 'testimonial-2', name: 'Michael B.', quote: "I learned that logic is an ineffective tool before the age of 5. I started seeing changes in my daughter's behavior within days. Highly recommend." },
-        { id: 'testimonial-3', name: 'Emily R.', quote: "I love how deep the class went.  I learned not just tactics, but a coherent philosophy.  Now I can use it for any problems that come up." },
     ];
 
     return (
