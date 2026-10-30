@@ -351,8 +351,8 @@ const PricingSection = () => (
     <section id="waitlist" className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
              <div className="text-center mb-12">
-                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Join Our Pilot Class</h2>
-                 <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Invest in your family's future. Join our pilot class — a small, invite-only group to start.</p>
+                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Join A Future Class</h2>
+                 <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Invest in your family's future.  Fill out our interest form to hear about future classes.</p>
             </div>
             <div className="grid max-w-md mx-auto">
                 <Card className="flex flex-col">
@@ -365,6 +365,11 @@ const PricingSection = () => (
                             <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5"/>Personalized guidance on your own parenting moments, live with Lynette</li>
                         </ul>
                     </CardContent>
+                    <div className="p-6 pt-0">
+                        <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                            <a href="https://forms.gle/gHNbTjWCqy4oTwgA9" target="_blank" rel="noopener noreferrer">Submit Interest Form</a>
+                        </Button>
+                    </div>
                 </Card>
                 {/* Village Pass option — may bring back later
                  <Card className="flex flex-col border-primary ring-2 ring-primary">
